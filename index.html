@@ -10,22 +10,27 @@
 <body>
 <div class="main">
   <div class="search-part">
-    <h2>Be smart! Find a fact to learn!</h2>
+    <h2>Stay curious! Find a fact to learn!</h2>
     <div class="search">
-      <input type="text" id="monthInput" placeholder="Enter a month(number)...">
-      <input type="text" id="dateInput" placeholder="Enter a date(number)...">
-      <button type="submit" name="button" id="searchStart">Get Fact</button>
+      <input type="text" id="monthInput" placeholder="Month" readonly>
+      <button type="button" name="button" id="monthBtn" class="adder">+</button>
+      <input type="text" id="dateInput" placeholder="Day" readonly>
+      <button type="button" name="button" id="dayBtn" class="adder">+</button>
+      <button type="button" name="button" id="searchStart">Get Fact</button>
     </div>
     <div id="output">
-      <h1>Fact to learn:</h1>
+      <h1>It is interesting:</h1>
       <p id="factText"></p>
       <button type="button" name="button" id="bookmark">Add to favorites</button>
+      <!-- <button type="button" name="button" id="anotherSearch">Another Fact</button> -->
     </div>
 </div>
 <div class="bookmark-part">
-  <h3>Favourite facts:</h3>
+  <div class="top-box">
+  <h2>Facts to learn:</h2>
   <div class="customSearch">
-    <input type="text" placeholder="Search my facts...">
+    <input type="text" placeholder="Search my facts..." id = "searchInput">
+  </div>
   </div>
   <ul class="myBookmarks">
   </ul>

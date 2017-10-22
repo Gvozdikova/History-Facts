@@ -3,18 +3,86 @@
   padding: 0;
 }
 .main{
-  margin: 0 auto;
-  padding: 30px;
+  display: flex;
+  background-color: #629efc;
+  height: 100vh;
+  align-items: center;
 }
-#output{
-  display: none;
-}
-.bookmark-part{
-  float: right;
-  width:45%;
-  display: none;
+.search-part,.bookmark-part{
+  flex:1;
+  text-align: center;
+  padding: 30px 20px;
 }
 .search-part{
-  float: left;
-  width: 45%;
+  border-radius: 10px;
+  background-color: #325284;
+  margin: 15px;
+  color: #000;
+}
+.search{
+   display: flex;
+   justify-content: center;
+}
+.search-part h2{
+  padding-bottom: 15px;
+}
+.search input{
+  height: 30px;
+  /*margin: 15px 3px 0 0;*/
+}
+.search #searchStart{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.search #searchStart:hover{
+  background-color: #629efc;
+}
+.adder{
+  font-size: 30px;
+  color: #03c133;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  /*position: absolute;*/
+  outline: none;
+  padding: 0 10px 0 3px;
+}
+
+#output, .bookmark-part{
+  display: none;
+}
+#output{
+  margin-top: 15px;
+}
+#output button{
+  width: 150px;
+  height: 30px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #59f27f;
+  cursor: pointer;
+}
+#output p{
+  padding: 15px 0;
+  font-style: italic;
+}
+.myBookmarks li{
+  padding: 10px;
+  border-radius: 7px;
+  border: 2px solid #325284;
+  margin-bottom: 10px;
+}
+.top-box{
+  display: flex;
+  padding: 0 15px 15px 15px;
+}
+.top-box input{
+  height: 25px;
+  margin-left: 10px;
 }
