@@ -55,7 +55,7 @@ function getFactsFetch(){
     });
 }
 
-//Добовление в избранное
+//Добaвление в избранное
 function addBookmark(){
   // monthInput.value = '';
   // dateInput.value = '';
